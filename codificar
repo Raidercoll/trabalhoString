@@ -1,0 +1,60 @@
+Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o texto sem acentos: ");
+        String texto = sc.nextLine();
+        for(int i = 0; i <texto.length();i++){
+            char caract = texto.charAt(i);
+            if(caract == ' '){
+                System.out.print(" ");
+            }else if(caract == ','){
+                System.out.print(",");
+            }else if(caract == '.'){
+                System.out.print(".");
+            }else if(caract == ';'){
+                System.out.print(";");
+            }else if(caract == ':'){
+                System.out.print(":");
+            }else if(caract == '?'){
+                System.out.print("?");
+            }else if(caract == '!'){
+                System.out.print("!");
+            }else if(caract == '@'){
+                System.out.print("@");
+            }else if(caract == '$'){
+                System.out.print("$");
+            }else if(caract == '%'){
+                System.out.print("%");
+            }else if(caract == '&'){
+                System.out.print("&");
+            }else if(caract == '('){
+                System.out.print("(");
+            }else if(caract == ')'){
+                System.out.print(")");
+            }else if(caract == '{'){
+                System.out.print("{");
+            }else if(caract == '}'){
+                System.out.print("}");
+            }else if(caract == '['){
+                System.out.print("[");
+            }else if(caract == ']'){
+                System.out.print("]");
+            }else if(caract == '<'){
+                System.out.print("<");
+            }else if(caract == '>'){
+                System.out.print(">");
+            }else if(caract == '/'){
+                System.out.print("/");
+            }else if(caract == '*'){
+                System.out.print("*");
+            }else if(caract == '+'){
+                System.out.print("+");
+            }else if(caract == '-'){
+                System.out.print("-");
+            }else if(caract == '='){
+                System.out.print("=");
+            }else if(caract == '-'){
+                System.out.print("-");
+            }else if(caract == '_'){
+                System.out.print("_");
+            }else{
+                System.out.print("p" + caract);
+            }
