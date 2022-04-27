@@ -1,3 +1,4 @@
+
 package trabalhos;
 
 import java.util.Scanner;
@@ -23,6 +24,7 @@ public class trabalho2 {
                 Scanner db = new Scanner(System.in);
                 System.out.print("Digite o texto: ");
                 String str = db.nextLine();
+                System.out.println("texto cifrado: ");
                 for(int x =0; x<str.length();x++){
                 char caract = str.charAt(x);
                     if(caract == ' '){
@@ -89,6 +91,7 @@ public class trabalho2 {
                 Scanner jk = new Scanner(System.in);
                 System.out.print("Digite o texto: ");
                 String str1 = jk.nextLine();
+                System.out.println("Texto decifrado: ");
                 for(int y=0;y<str1.length();y++){
                     char caract1 = str1.charAt(y);
                     if(caract1 =='p' && str1.charAt(y+1) == 'p' && str1.charAt(y+2) =='p' ||caract1 != 'p'){
