@@ -1,0 +1,108 @@
+package trabalhos;
+
+import java.util.Scanner;
+
+public class trabalho2 {
+
+    public static void main(String[] args) {
+
+        System.out.println("Bem-vindo ao programa cifrador!");
+
+        for (int i = 1; i > 0; i++){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Selecione a opção desejada: ");
+            System.out.println("\t 1. Cifrar");
+            System.out.println("\t 2. Decifrar");
+            System.out.println("\t 3. Sair");
+            System.out.print("Digite uma opção: ");
+            int opcao = sc.nextInt();
+
+            //Cifrar
+            
+            if (opcao == 1){
+                Scanner db = new Scanner(System.in);
+                System.out.print("Digite o texto: ");
+                String str = db.nextLine();
+                for(int x =0; x<str.length();x++){
+                char caract = str.charAt(x);
+                    if(caract == ' '){
+                        System.out.print(" ");
+                    }else if(caract == ','){
+                        System.out.print(",");
+                    }else if(caract == '.'){
+                        System.out.print(".");
+                    }else if(caract == ';'){
+                        System.out.print(";");
+                    }else if(caract == ':'){
+                        System.out.print(":");
+                    }else if(caract == '?'){
+                        System.out.print("?");
+                    }else if(caract == '!'){
+                        System.out.print("!");
+                    }else if(caract == '@'){
+                        System.out.print("@");
+                    }else if(caract == '$'){
+                        System.out.print("$");
+                    }else if(caract == '%'){
+                        System.out.print("%");
+                    }else if(caract == '&'){
+                        System.out.print("&");
+                    }else if(caract == '('){
+                        System.out.print("(");
+                    }else if(caract == ')'){
+                        System.out.print(")");
+                    }else if(caract == '{'){
+                        System.out.print("{");
+                    }else if(caract == '}'){
+                        System.out.print("}");
+                    }else if(caract == '['){
+                        System.out.print("[");
+                    }else if(caract == ']'){
+                        System.out.print("]");
+                    }else if(caract == '<'){
+                        System.out.print("<");
+                    }else if(caract == '>'){
+                        System.out.print(">");
+                    }else if(caract == '/'){
+                        System.out.print("/");
+                    }else if(caract == '*'){
+                        System.out.print("*");
+                    }else if(caract == '+'){
+                        System.out.print("+");
+                    }else if(caract == '-'){
+                        System.out.print("-");
+                    }else if(caract == '='){
+                        System.out.print("=");
+                    }else if(caract == '-'){
+                        System.out.print("-");
+                    }else if(caract == '_'){
+                        System.out.print("_");
+                    }else{
+                        System.out.print("p" + caract);
+                    }
+                }
+                System.out.println(" ");
+            }
+
+            //Decifrar
+            if (opcao == 2){
+                Scanner jk = new Scanner(System.in);
+                System.out.print("Digite o texto: ");
+                String str1 = jk.nextLine();
+                for(int y=0;y<str1.length();y++){
+                    char caract1 = str1.charAt(y);
+                    if(caract1 =='p' && str1.charAt(y+1) == 'p' && str1.charAt(y+2) =='p' ||caract1 != 'p'){
+                        System.out.print(caract1);
+                    }
+                }
+                System.out.println(" ");
+            }
+           
+            //Sair
+            if (opcao == 3){
+                System.out.println("Saindo...");
+                break;
+            }
+        }
+    }
+}
